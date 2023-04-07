@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.main-content{
+    display: flex;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: none;
+}
+
+.card{
+    background-color: rgba(235, 228, 228, 0.719);padding:2em;border-radius: 30px;width: 100%;max-width: 480px;
+    font-size: medium;
+    color: black;
+    justify-content: center;
+    overflow: hidden;
+    margin:10px;
+    display: none;
+}
+.card:active{
+    transform: translateY(1px);
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+button{
+    border-radius: 50%;
+    border: none;
+    margin-left:10px;    
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(172, 172, 172);
+}
+.weather{
+    display:none;
+    font-size: 18px;
+}
+button:active {
+    background-color: #eaffeb;
+    box-shadow: 0 3px rgb(209, 209, 209);
+    transform: translateY(2px);
+}
+.search-bar:active{
+    transform: translateY(2px);
+}
+button:hover{
+    background-color: rgb(233, 233, 233);
+}
+.b-img{
+    pointer-events: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.search-bar{
+    border:none;
+    outline: none;
+    padding-left:15px;
+    border-radius: 18px;
+    width: 80%;
+    height: 30px;
+}
+.error{
+    margin-left: 10%;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.weather{
+    line-height: 20px;
+}
+.sec1{
+    position: relative;
+    width: 150px;
+    line-height: 50px;
+    margin-left:30px;
+}
+.sec2{
+    line-height: 50px;
+    width: 200px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.city{
+    margin-top: 15px;
+    display: flex;
+    text-decoration: underline;
+    color: rgb(100, 100, 100);
+    justify-content: center;
+    
+}
+.cb{
+    text-decoration: underline;
+}
+.discription{
+    display: inline;
+}
+
+.cloud-icon{
+    display: inline;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:54px;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    margin-left: 0%;
+}
