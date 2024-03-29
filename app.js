@@ -12,7 +12,7 @@ fetch(imageUrl)
     }
 )
 const weather={
-    apiKey:"6716e1642f6491f47091b18087b923c4",
+    apiKey:"your api key...",
     fetchWeather: function(city){
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6716e1642f6491f47091b18087b923c4`;
         fetch(url).then((response=>{
